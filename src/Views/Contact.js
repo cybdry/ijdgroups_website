@@ -26,10 +26,12 @@ function Contact(){
 		e.preventDefault();
 		emailjs.sendForm('service_8qwkvx2','template_6oidzxk',form.current,'QJwti4o51zkJJ9WQg')
 		.then((result) =>{
-			console.log(result.text);
+			//console.log(result.text);
+			e.target.reset();
 			navigate("/");
 			},(error)=>{
-				console.log(error.text);
+				//console.log(error.text);
+				e.target.reset();
 				});
 		};
 

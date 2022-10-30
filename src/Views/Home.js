@@ -24,20 +24,22 @@ import ISO18001 from '../Img/Certificates/iso18001.jpg';
 import Dots from '../Icons/Dots';
 import Square from '../Icons/Square';
 import Circle from '../Icons/Circle';
-import { NavLink,useNavigate } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import emailjs from "@emailjs/browser";
 
 function Home(props){
-		const navigate=useNavigate();
+
 	const form=useRef();
+	
 		const sendEmail=(e) =>{
 		e.preventDefault();
 		emailjs.sendForm('service_8qwkvx2','template_6oidzxk',form.current,'QJwti4o51zkJJ9WQg')
 		.then((result) =>{
-			console.log(result.text);
-			navigate("/");
+			//console.log(result.text);
+			e.target.reset();
 			},(error)=>{
-				console.log(error.text);
+				//console.log(error.text);
+				e.target.reset();
 				});
 		};
 
@@ -167,10 +169,19 @@ function Home(props){
 
                             <div className="form">
                                 <form ref={form} onSubmit={sendEmail}>
-                                    <input type="text" placeholder="Name" name="from_name" required />
-                                    <input type="email" placeholder="Email" name="from_email" required/>
+                                    <input type="text"
+																	placeholder="Name"
+																	name="from_name"
+																	required />
+                                    <input type="email"
+																	placeholder="Email"
+																	name="from_email"
+																	required/>
 
-                                    <textarea placeholder="Message" name="message"></textarea>
+                                    <textarea
+																			placeholder="Message"
+																			name="message"
+																		></textarea>
 
                                     <div className="send">
                                         <input type="submit" value="Envoyer"/>
