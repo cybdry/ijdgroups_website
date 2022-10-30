@@ -1,0 +1,478 @@
+$mainColor : #05a0e3;
+
+.rentalView{
+    background: 
+        url('../Img/Background/lifter-background.png') no-repeat,
+        url('../Img/Background/wave6.svg') no-repeat,
+        url('../Img/Background/wave7.svg') no-repeat,
+        url('../Img/Background/excavator-background.png') no-repeat;
+
+    background-position:
+        top 0 left -50%,
+        top 0 right 0,
+        top 50% left 0,
+        bottom 0 right 0;
+
+    background-size:
+        50%,
+        50%,
+        100%,
+        40%;
+
+    #square,#circle{
+        fill:none;
+        stroke:$mainColor;
+        stroke-width: .6;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .intro{
+        position: relative;
+        max-width: 1550px;
+        margin: 0 auto;
+
+        #circle{
+            width: 110px;
+            right:10%;
+            top: 25%;
+            z-index: 2;
+        }
+
+        p{
+            font-size: 1.2em;
+            margin-bottom: 0;
+        }
+
+        h1{
+            color:$mainColor;
+            font-size: 5em;
+            margin-top: 0;
+        }
+
+
+        a{
+            color:white;
+            background-color: $mainColor;
+            text-decoration: none;
+            margin-top: 5em;
+            display: inline-block;
+            padding:1em 3.5em;
+            border-radius: 0.5em;
+            position: relative;
+            font-weight: 400;
+            font-size: 1.1em;
+
+            &::after{
+                content: '';
+                width: 20px;
+                height: 2px;
+                background-color: black;
+                position: absolute;
+                top:47%;
+                right: -5%;
+            }
+        }
+
+        .image{
+            width: 400px;
+            height: auto;
+            border-radius: .5em;
+            position: absolute;
+            right: 10%;
+            top: 60%;
+            transform: rotate(10deg);
+            
+            img{
+                width: 100%;
+                height:auto;
+                border-radius: .5em;
+            }
+
+            #square{
+                stroke-width: .2;
+                transform: rotate(20deg);
+                width: 400px;
+                margin-left: -120%;
+                margin-top: 24%;
+            }
+        }
+    }
+
+    .ourMachinery{
+        margin-top: 10em;
+
+        p{
+            max-width: 600px;
+        }
+
+        .machine-container{
+            .machine{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin:3em 0;
+                flex-wrap: wrap;
+
+                .slider{
+                    width: 32%;
+                    min-width: 350px;
+                    height: auto;
+                }
+
+                .description{
+                    width: 50%;
+
+                    h3{
+                        margin:0;
+                        position: relative;
+                        z-index: 2;
+        
+                        #square{
+                            fill: none;
+                            stroke: #05a0e3;
+                            position: absolute;
+                            stroke-width: 1;
+                            top: -0.4em;
+                            left: -0.8em;
+                            width: 1.6em;
+                            transform: rotate(20deg);
+                            z-index: -1;
+                        }
+                    }
+
+                    p{
+                        font-size: 1.1em;
+                        margin:0;
+                    }
+
+                    .list{
+                        margin-top: 1em;
+
+                        .list-item{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            margin: .5em 0;
+                            
+                            .dot{
+                                width: .7em;
+                                height: .7em;
+                                border-radius: 50%;
+                                background-color: $mainColor;
+                                margin-right: .5em;
+                            }
+                        } 
+
+                        .desc{
+                            margin-left: 1em;
+                        }
+                    }
+
+                    .showMore{
+                        margin-top: 1em;
+                        border-bottom: rgba(111,111,111,0.2) transparent transparent;
+                        display:inline-block;
+
+                        &:hover{
+                            cursor: pointer;
+                            border-bottom: 1px solid black;
+                        }
+                    }
+                }
+            }
+        }
+
+        .machine-container .machine:last-child{
+            margin-bottom: 0; 
+        }
+    }
+
+    .price-list{
+        h2{
+            position: relative;
+
+            #square{
+                fill: none;
+                stroke: #05a0e3;
+                position: absolute;
+                stroke-width: 1;
+                top: -0.4em;
+                left: -0.8em;
+                width: 1.6em;
+                transform: rotate(20deg);
+                z-index: -1;
+            }
+        }
+
+        p{
+            max-width: 600px;
+            font-size: 1.1em;
+        }
+
+        .price{
+            color:white;
+            background-color: $mainColor;
+            text-decoration: none;
+            display: inline-block;
+            padding:1em 3.5em;
+            border-radius: 0.5em;
+            position: relative;
+            font-weight: 400;
+            font-size: 1.1em;
+
+            &::after{
+                content: '';
+                width: 20px;
+                height: 2px;
+                background-color: black;
+                position: absolute;
+                top:47%;
+                right: -5%;
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .reservation{
+        width:100%;
+        margin: 0 auto;
+
+        h2{
+            margin-bottom: 0.6em;
+
+            #square{
+                fill: none;
+                stroke: #05a0e3;
+                position: absolute;
+                stroke-width: 1;
+                top: -0.4em;
+                left: -0.8em;
+                width: 1.6em;
+                transform: rotate(20deg);
+                z-index: -1;
+            }
+        }
+
+        h1{
+            font-size: 5em;
+            margin:0;
+            color:$mainColor;
+            margin-left: 40px;
+        }
+
+        p{
+            margin-left: 40px;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+    }
+}
+
+//Media queries
+@media screen and (min-width:1550px){
+    .rentalView{
+        background: none !important;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .rentalView{
+        background-size:
+            55%,
+            65%,
+            100%,
+            40%;
+
+        .intro{
+            h1{
+                font-size: 4.5em;
+            }
+
+            #circle{
+                right: 3%;
+            }
+
+            .image{
+                width: 300px;
+                top:60%;
+
+                #square{
+                    margin-left: -129%;
+                    margin-top: -3%;
+                }
+            }
+        }
+
+        .ourMachinery{
+            margin-top: 9em;
+            
+            .machine-container{
+                .machine{
+                    flex-direction: column;
+                    margin-top: 3em;
+
+                    .description{
+                        width: 100%
+                    }
+
+                    .slider{
+                        margin-top: 2em;
+                        width: 100%;
+                        min-width:100%;
+                    }
+
+                    .slide .image{
+                        margin: 0 -10px;
+                        padding:0 15px;
+                    }
+
+                    #prevSlide{
+                        left:-15px;
+                    }
+
+                    #nextSlide{
+                        right:-15px;
+                    }
+                }
+
+                .machine:nth-of-type(1){
+                    margin-top: 2.5em;
+                }
+            }
+        }
+
+        .reservation{
+            h1{
+                font-size: 4em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:830px){
+    .rentalView{
+        .intro{
+            h1{
+                font-size: 3.8em;
+            }
+
+            #circle{
+                width: 80px;
+                top: 0;
+            }
+
+            .image{
+                width: 250px;
+
+                #square{
+                    width: 350px;
+                    margin-top: -9%;
+                }
+            }
+        }
+
+        .reservation{
+            h1,p{
+                margin-left: 0;
+            }
+
+            h1{
+                margin-bottom: 0;
+            }
+
+            p{
+                margin:0;
+            }
+
+            h3{
+                margin-bottom: 0.2em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:575px){
+    .rentalView{
+        background: none;
+
+        .intro{
+            h1{
+                font-size: 2.85em;
+            }
+
+            #circle{
+                width: 50px;
+                right: 20%;
+                top:2%;
+            }
+
+            .image{
+                width: 80%;
+                margin: 0 auto;
+                margin-top: 3em;
+                transform: rotate(-0.25deg);
+                position: static;
+
+                #square{
+                    width: 124%;
+                    top: 3em;
+                    right: 1em;
+                }
+            }
+        }
+
+        .ourMachinery{
+            margin-top: -1em;
+        }
+
+        .reservation{
+            h1{
+                font-size: 2.95em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:425px){
+    .rentalView{
+        .intro{
+            h1{
+                font-size: 2.5em;
+            }
+
+            #circle{
+                top: 20%;
+                right: 0;
+            }
+
+            a{
+                display: block;
+                text-align: center;
+
+                &::after{
+                    height: 0;
+                }
+            }
+        }
+
+        .reservation{
+            h1{
+                font-size: 2.5em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:360px){
+    .rentalView{
+        .reservation{
+            h1{
+                font-size: 2em;
+            }
+        }
+    }
+}

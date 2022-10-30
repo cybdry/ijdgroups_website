@@ -1,0 +1,41 @@
+$mainColor : #05a0e3;
+
+.rentalSlider{
+    .slide{
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: .5em;
+        }
+    }
+
+    #nextSlide,#prevSlide{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        fill: $mainColor;
+        background-color: white;
+        border-radius: 50%;
+    }
+    
+    #nextSlide{
+        right: -5%;
+    }
+    
+    #prevSlide{
+        left: -5%;
+    }
+    
+    .slick-next::before{
+        content: '';
+    }
+    
+    .slick-prev::before{
+        content: '';
+    }
+}
+
+
