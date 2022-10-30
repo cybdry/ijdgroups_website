@@ -23,7 +23,7 @@ function Footer(props){
                             <NavLink to="/about" onClick={props.scrollToTop}>A propos</NavLink>
                             <NavLink to="/portfolio" onClick={props.scrollToTop}>Realisations</NavLink>
                             <NavLink to="/contact" onClick={props.scrollToTop}>Contact</NavLink>
-                            <NavLink to="/rental" onClick={props.scrollToTop}>Services</NavLink>
+													{/*<NavLink to="/rental" onClick={props.scrollToTop}>Services</NavLink>*/}
                         </div>
 
                         <div className="column">
