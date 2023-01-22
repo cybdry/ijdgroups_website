@@ -74,7 +74,7 @@ function Portfolio(){
                             <div className="portfolio-item">
                                 <h3>Plan d'une Villas<Square /> </h3>
 
-															<p>Nous vous proposons un projet de deux  duplex ultra moderne conçu sur une surface de 500 m² ( avec 250m² de surface de terrain  occupée par chaque villa ).</p>
+															{/*				<p>Nous vous proposons un projet de deux  duplex ultra moderne conçu sur une surface de 500 m² ( avec 250m² de surface de terrain  occupée par chaque villa ).</p>
 																COMPOSITION:
 															<ul>
 																<li>UN GARAGE DE DEUX VEHICULES</li>
@@ -99,6 +99,7 @@ function Portfolio(){
 
 												RENTREZ CHEZ VOUS DANS LE MINIMALISLME ARTISTIQUE !
 															POUR TOUT RENSEIGNEMENT NOUS SOMMES DISPONIBLE
+															*/}
 															<p> </p>
 
                                 <PortfolioItemSlider Image1={Image_2_1} Image2={Image_2_2} Image3={Image_2_3} Image4={Image_2_4}/>
