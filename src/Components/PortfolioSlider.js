@@ -6,7 +6,12 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 //Slider image
-import SliderImage from '../Img/Slider-Home/excavator.jpg';
+import SliderImage_01 from '../Img/Slider-Home/001.jpeg';
+import SliderImage_02 from '../Img/Slider-Home/002.jpeg';
+import SliderImage_03 from '../Img/Slider-Home/003.jpeg';
+import SliderImage_04 from '../Img/Slider-Home/004.jpeg';
+import SliderImage_05 from '../Img/Slider-Home/005.jpeg';
+import SliderImage_06 from '../Img/Slider-Home/006.jpeg';
 
 //Arrows
 import Next from '../Icons/Next';
@@ -90,11 +95,11 @@ function PortfolioSlider(){
             <Slider {...settings}>
                 <div className="slide">
                   <div className="content">
-                  <img src={SliderImage} alt="portfolio-example" />
+                  <img src={SliderImage_01} alt="portfolio-example" />
                     <div className="text">
                         <p>Plan de Construction</p>
 
-                        <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
+											{/* <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>*/}
 
                         <a href="#sa">Plus de Detail</a>
                     </div>  
@@ -104,26 +109,11 @@ function PortfolioSlider(){
 
                 <div className="slide">
                   <div className="content">
-                  <img src={SliderImage} alt="portfolio-example" />
+                  <img src={SliderImage_02} alt="portfolio-example" />
                     <div className="text">
                         <p>Plan de Construction</p>
 
-                        <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
-
-                        <a href="#sa">Plus de Detail</a>
-                    </div>  
-                  </div>
-
-                </div>
-
-                
-                <div className="slide">
-                  <div className="content">
-                  <img src={SliderImage} alt="portfolio-example" />
-                    <div className="text">
-                        <p>Plan de Construction</p>
-
-                        <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
+											{/* <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>*/}
 
                         <a href="#sa">Plus de Detail</a>
                     </div>  
@@ -134,25 +124,11 @@ function PortfolioSlider(){
                 
                 <div className="slide">
                   <div className="content">
-                  <img src={SliderImage} alt="portfolio-example" />
+                  <img src={SliderImage_03} alt="portfolio-example" />
                     <div className="text">
                         <p>Plan de Construction</p>
 
-                        <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
-
-                        <a href="#sa">Plus de Detail</a>
-                    </div>  
-                  </div>
-
-                </div>
-
-                <div className="slide">
-                  <div className="content">
-                  <img src={SliderImage} alt="portfolio-example" />
-                    <div className="text">
-                        <p>Plan de Construction</p>
-
-                        <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
+											{/*<p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>*/}
 
                         <a href="#sa">Plus de Detail</a>
                     </div>  
@@ -163,11 +139,40 @@ function PortfolioSlider(){
                 
                 <div className="slide">
                   <div className="content">
-                  <img src={SliderImage} alt="portfolio-example" />
+                  <img src={SliderImage_04} alt="portfolio-example" />
                     <div className="text">
                         <p>Plan de Construction</p>
 
-                        <p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>
+											{/*<p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>*/}
+
+                        <a href="#sa">Plus de Detail</a>
+                    </div>  
+                  </div>
+
+                </div>
+
+                <div className="slide">
+                  <div className="content">
+                  <img src={SliderImage_05} alt="portfolio-example" />
+                    <div className="text">
+                        <p>Plan de Construction</p>
+
+											{/*<p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>*/}
+
+                        <a href="#sa">Plus de Detail</a>
+                    </div>  
+                  </div>
+
+                </div>
+
+                
+                <div className="slide">
+                  <div className="content">
+                  <img src={SliderImage_06} alt="portfolio-example" />
+                    <div className="text">
+                        <p>Plan de Construction</p>
+
+											{/*<p>Toffee wafer sesame snaps sugar plum jelly danish cake bear claw pie. Sweet roll jelly-o-biscuit tart bonbon pastry bonbon. Powder sweet cheesecake jelly beans halvah. Chocolate bar.</p>*/}
 
                         <a href="#sa">Plus de Detail</a>
                     </div>  
