@@ -146,6 +146,13 @@ function Home(props){
                                     </div>
                                     <p>Sakarya 5400</p>
                                     <p>Serdivan</p>
+																	<div className="heading">
+																		<FontAwesomeIcon icon={faMapMarkerAlt} />
+																		<h4> Republique Democratique du Congo</h4>
+																		</div>
+																	<p>Kinshasa</p>
+																	<p>Avenue Père Poka numéro 9, commune de la</p>
+																	<p>Gombe.</p>
                                 </div>
                                     
                                 <div className="column">
